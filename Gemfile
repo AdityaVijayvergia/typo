@@ -19,9 +19,10 @@ dbfile = File.expand_path("../config/database.yml", __FILE__)
 #  end
 #end
 
-group :production do
-  gem 'pg'
-end
+gem 'pg'
+# group :production do
+#   gem 'pg'
+# end
 
 source 'https://rubygems.org'
 ruby "1.9.3"
@@ -51,7 +52,7 @@ group :development, :test do
   gem 'webrat'
   gem 'rspec-rails', '~> 2.0'
   gem 'simplecov', :require => false
-  gem 'sqlite3'
+  # gem 'sqlite3'
   gem 'cucumber'
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
